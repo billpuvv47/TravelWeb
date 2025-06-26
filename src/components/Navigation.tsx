@@ -14,7 +14,6 @@ const Navigation = () => {
     { href: "/services", label: "サービス" },
     { href: "/tours", label: "モンゴルツアー" },
     { href: "/gallery", label: "ギャラリー" },
-    { href: "/blog", label: "ブログ" },
     { href: "/company", label: "会社案内" },
     { href: "/contact", label: "お問い合わせ" },
   ];

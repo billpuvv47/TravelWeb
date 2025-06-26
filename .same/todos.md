@@ -12,7 +12,6 @@
 - [ ] Gallery page - photos of Mongolia and landscaping work
 - [ ] Company page - about Chuluut LLC in Japanese
 - [ ] Contact page - with provided email and phone
-- [ ] Blog page - travel stories and tips
 
 ## Content (All in Japanese)
 - [ ] Write company description for travel to Mongolia

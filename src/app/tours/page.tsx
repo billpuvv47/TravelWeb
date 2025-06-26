@@ -155,7 +155,7 @@ export default function Tours() {
                   <div
                     className="h-64 md:h-full bg-cover bg-center"
                     style={{
-                      backgroundImage: `url('https://ugc.same-assets.com/aIGTELaILgg14NWuyszqwD9CmKlcGVAF.jpeg')`
+                      backgroundImage: `url('https://www.nationalgeographic.com/content/dam/expeditions/destinations/asia/active/Mongolian-Horse-Trek/hero-mongolian-horse-trek-new.jpg')`
                     }}
                   />
                 </div>

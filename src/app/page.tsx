@@ -15,7 +15,7 @@ export default function Home() {
             Chuluut LLC
           </h1>
           <p className="text-xl md:text-2xl mb-8">
-            モンゴルの壮大な自然と遊牧民文化を体験する旅
+          モンゴルの雄大な自然と遊牧文化の体験、東京エリアの造園サービスもご提供中
           </p>
           <div className="space-x-4">
             <Link
@@ -29,6 +29,12 @@ export default function Home() {
               className="inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition-colors"
             >
               ツアーを見る
+            </Link>
+            <Link
+              href="/services#tokyo-landscaping"
+              className="inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition-colors"
+            >
+              造園サービスを見る
             </Link>
           </div>
         </div>
@@ -87,7 +93,7 @@ export default function Home() {
                   東京エリアで個人邸、マンション、公共空間の造園工事、植木の手入れ、庭園デザインを行っています。
                 </p>
                 <Link
-                  href="/services"
+                  href="/services#tokyo-landscaping"
                   className="text-green-600 hover:text-green-700 font-medium"
                 >
                   詳細を見る →
@@ -223,7 +229,7 @@ export default function Home() {
               </p>
               <p className="text-lg text-gray-600 mb-8">
                 私たちChuluut LLCは、この素晴らしい文化と自然を日本の皆様に
-                安全で快適にお楽しみいただけるよう、15年以上にわたり
+                安全で快適にお楽しみいただけるよう、2年以上にわたり
                 専門的なサービスを提供し続けています。
               </p>
               <Link
@@ -236,7 +242,7 @@ export default function Home() {
             <div
               className="h-96 bg-cover bg-center rounded-lg shadow-lg"
               style={{
-                backgroundImage: `url('https://www.mongolia-trips.com/cdn/mn-public/shutterstock_1042649437-MAX-w1000h600.jpg')`
+                backgroundImage: `url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/56/00/eb/caption.jpg?w=1200&h=-1&s=1')`
               }}
             />
           </div>
@@ -259,7 +265,7 @@ export default function Home() {
             <div
               className="h-48 bg-cover bg-center rounded-lg"
               style={{
-                backgroundImage: `url('https://ugc.same-assets.com/DjDuqjxdcH_GxsQ01eFTfGK6hqk4t8KL.jpeg')`
+                backgroundImage: `url('https://th.bing.com/th/id/OIP.YLG1pjCx7mifOF8v2X_PyAHaFj?r=0&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3')`
               }}
             />
             <div
@@ -271,7 +277,7 @@ export default function Home() {
             <div
               className="h-48 bg-cover bg-center rounded-lg"
               style={{
-                backgroundImage: `url('https://ugc.same-assets.com/9sWcHhaOVQplNfuWF8LP1Pb84_gcDNWo.jpeg')`
+                backgroundImage: `url('https://i.pinimg.com/originals/31/87/43/3187430be517541a175a44a765437918.jpg')`
               }}
             />
             <div
@@ -283,7 +289,7 @@ export default function Home() {
             <div
               className="h-48 bg-cover bg-center rounded-lg"
               style={{
-                backgroundImage: `url('https://ugc.same-assets.com/13P_5co9s5EzTLl0jyMXMqeCrkMiJ86B.jpeg')`
+                backgroundImage: `url('https://th.bing.com/th/id/R.d1b730673800951205fcb20d8abc19fb?rik=pzeh73NBlQXu2Q&riu=http%3a%2f%2f3.bp.blogspot.com%2f-4OWrvW5vKXg%2fUaV4w_D-9MI%2fAAAAAAAAAP4%2fugDHAROAuVA%2fs1600%2fmongolia.jpg&ehk=2BOEcvwNoTHV%2fuGKQ%2bEDnmglWYcRYVhCbDYEesQs3rk%3d&risl=&pid=ImgRaw&r=0')`
               }}
             />
             <div
@@ -295,7 +301,7 @@ export default function Home() {
             <div
               className="h-48 bg-cover bg-center rounded-lg"
               style={{
-                backgroundImage: `url('https://ugc.same-assets.com/xEAvYm9mSZUpd8vD1zw8XUjSv5akvpP4.jpeg')`
+                backgroundImage: `url('https://dmd-mongolie.com/en/wp-content/uploads/2020/02/159-1536x1022.jpg')`
               }}
             />
             <div
