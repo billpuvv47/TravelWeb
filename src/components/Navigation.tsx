@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 const Navigation = () => {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
     { href: "/", label: "ホーム" },
@@ -24,7 +26,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <div className="text-2xl font-bold text-green-800">
-              Adya Travel
+              Chuluut LLC
             </div>
           </Link>
 
@@ -48,13 +50,38 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button className="text-gray-700 hover:text-green-600">
+            <button
+              className="text-gray-700 hover:text-green-600 focus:outline-none"
+              aria-label="メニューを開く"
+              onClick={() => setMenuOpen((open) => !open)}
+            >
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
         </div>
+        {/* Mobile menu dropdown */}
+        {menuOpen && (
+          <nav className="md:hidden absolute left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-50 animate-fade-in">
+            <ul className="flex flex-col py-4 px-6 space-y-2">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={cn(
+                      "block py-2 px-2 rounded text-base font-medium transition-colors hover:bg-green-50 hover:text-green-700",
+                      pathname === item.href ? "text-green-800 font-bold" : "text-gray-700"
+                    )}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </div>
     </header>
   );

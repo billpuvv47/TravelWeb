@@ -52,7 +52,14 @@ export default function Contact() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 お問い合わせフォーム
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                action="/thanks"
+                className="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="contact" />
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     お名前 *

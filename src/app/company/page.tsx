@@ -13,7 +13,7 @@ export default function Company() {
             会社案内
           </h1>
           <p className="text-xl">
-            Adya Travelについて
+            Chuluut LLCについて
           </p>
         </div>
       </section>
@@ -27,7 +27,7 @@ export default function Company() {
                 私たちについて
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Adya Travelは、モンゴルの壮大な自然と遊牧民文化を日本の皆様にお届けする専門旅行会社です。
+                Chuluut LLCは、モンゴルの壮大な自然と遊牧民文化を日本の皆様にお届けする専門旅行会社です。
                 また、東京エリアにおいて高品質な造園サービスも提供しております。
               </p>
               <p className="text-lg text-gray-600 mb-6">
@@ -70,7 +70,7 @@ export default function Company() {
                       会社名
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-500">
-                      株式会社 Adya Travel
+                      株式会社 Chuluut LLC
                     </td>
                   </tr>
                   <tr>
@@ -206,7 +206,7 @@ export default function Company() {
                       2009年4月
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-500">
-                      東京都渋谷区にてAdya Travel設立。モンゴル専門旅行業を開始。
+                      東京都渋谷区にてChuluut LLC設立。モンゴル専門旅行業を開始。
                     </td>
                   </tr>
                   <tr>

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adya Travel - モンゴル旅行・東京造園サービス",
-  description: "モンゴル旅行ツアーと東京エリアの造園サービスを提供するAdya Travelです。日本のお客様にモンゴルの美しい自然と遊牧民文化をお届けします。",
+  title: "Chuluut LLC - モンゴル旅行・東京造園サービス",
+  description: "モンゴル旅行ツアーと東京エリアの造園サービスを提供するChuluut LLCです。日本のお客様にモンゴルの美しい自然と遊牧民文化をお届けします。",
 };
 
 export default function RootLayout({

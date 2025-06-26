@@ -12,7 +12,7 @@ export default function Home() {
       >
         <div className="text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Adya Travel
+            Chuluut LLC
           </h1>
           <p className="text-xl md:text-2xl mb-8">
             モンゴルの壮大な自然と遊牧民文化を体験する旅
@@ -222,7 +222,7 @@ export default function Home() {
                 モンゴルには現代社会では失われつつある貴重な体験が待っています。
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                私たちAdya Travelは、この素晴らしい文化と自然を日本の皆様に
+                私たちChuluut LLCは、この素晴らしい文化と自然を日本の皆様に
                 安全で快適にお楽しみいただけるよう、15年以上にわたり
                 専門的なサービスを提供し続けています。
               </p>
