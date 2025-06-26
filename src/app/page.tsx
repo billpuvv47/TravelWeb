@@ -17,24 +17,24 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-8">
           モンゴルの雄大な自然と遊牧文化の体験、東京エリアの造園サービスもご提供中
           </p>
-          <div className="space-x-4">
+          <div className="flex flex-col gap-1.5 w-full max-w-xs mx-auto sm:max-w-none sm:flex-row sm:gap-0 sm:space-x-4 sm:justify-center">
             <Link
               href="/contact"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              className="w-full sm:w-auto inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition-colors text-center"
             >
               お問い合わせ
             </Link>
             <Link
-              href="/tours"
-              className="inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition-colors"
-            >
-              ツアーを見る
-            </Link>
-            <Link
               href="/services#tokyo-landscaping"
-              className="inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition-colors"
+              className="w-full sm:w-auto inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition-colors text-center"
             >
               造園サービスを見る
+            </Link>
+            <Link
+              href="/tours"
+              className="w-full sm:w-auto inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition-colors text-center"
+            >
+              ツアーを見る
             </Link>
           </div>
         </div>
