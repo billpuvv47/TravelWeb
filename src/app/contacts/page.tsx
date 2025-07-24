@@ -38,6 +38,7 @@ export default function Contact() {
                 data-netlify-honeypot="bot-field"
                 action="/thanks"
                 className="space-y-6"
+                {...{ netlify: "true" }}
               >
                 <input type="hidden" name="form-name" value="contacts" />
                 {/* Honeypot field for spam prevention (hidden from users) */}
