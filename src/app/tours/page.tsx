@@ -81,7 +81,7 @@ export default function Tours() {
                       ¥220,000〜
                     </div>
                     <Link
-                      href="/contact"
+                      href="/contacts"
                       className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
                     >
                       詳細・予約
@@ -138,7 +138,7 @@ export default function Tours() {
                       ¥180,000〜
                     </div>
                     <Link
-                      href="/contact"
+                      href="/contacts"
                       className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
                     >
                       詳細・予約
@@ -195,7 +195,7 @@ export default function Tours() {
                       ¥160,000〜
                     </div>
                     <Link
-                      href="/contact"
+                      href="/contacts"
                       className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
                     >
                       詳細・予約
@@ -463,7 +463,7 @@ export default function Tours() {
           </p>
           <div className="space-x-4">
             <Link
-              href="/contact"
+              href="/contacts"
               className="inline-block bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors"
             >
               今すぐ予約・相談

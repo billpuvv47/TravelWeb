@@ -17,7 +17,7 @@
 - [ ] Write company description for travel to Mongolia
 - [ ] Add Tokyo landscaping services description
 - [ ] Create tour package descriptions
-- [ ] Add contact information: billpuvv47@gmail.com, 07020125328
+- [ ] Add contacts information: billpuvv47@gmail.com, 07020125328
 
 ## Images & Media
 - [ ] Add Mongolian tourism photos (yurts, Gobi desert, nomadic culture)

@@ -19,7 +19,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col gap-1.5 w-full max-w-xs mx-auto sm:max-w-none sm:flex-row sm:gap-0 sm:space-x-4 sm:justify-center">
             <Link
-              href="/contact"
+              href="/contacts"
               className="w-full sm:w-auto inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition-colors text-center"
             >
               お問い合わせ
@@ -334,7 +334,7 @@ export default function Home() {
           </p>
           <div className="space-x-4">
             <Link
-              href="/contact"
+              href="/contacts"
               className="inline-block bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors"
             >
               今すぐお問い合わせ

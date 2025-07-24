@@ -32,14 +32,14 @@ export default function Contact() {
               </h2>
               {/* Netlify Forms: Must have data-netlify, form-name, and a honeypot field. Do not use onSubmit handler. */}
               <form
-                name="contact"
+                name="contacts"
                 method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 action="/thanks"
                 className="space-y-6"
               >
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="contacts" />
                 {/* Honeypot field for spam prevention (hidden from users) */}
                 <p className="hidden">
                   <label>

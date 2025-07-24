@@ -379,7 +379,7 @@ export default function Services() {
             モンゴル旅行も造園サービスも、お客様のご要望に合わせてご提案いたします
           </p>
           <Link
-            href="/contact"
+            href="/contacts"
             className="inline-block bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors"
           >
             お問い合わせ・お見積り
