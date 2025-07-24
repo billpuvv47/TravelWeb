@@ -11,12 +11,6 @@ export default function Contact() {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-  };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -52,14 +46,22 @@ export default function Contact() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 お問い合わせフォーム
               </h2>
+              {/* Netlify Forms: Must have data-netlify, form-name, and a honeypot field. Do not use onSubmit handler. */}
               <form
                 name="contact"
                 method="POST"
                 data-netlify="true"
+                data-netlify-honeypot="bot-field"
                 action="/thanks"
                 className="space-y-6"
               >
                 <input type="hidden" name="form-name" value="contact" />
+                {/* Honeypot field for spam prevention (hidden from users) */}
+                <p className="hidden">
+                  <label>
+                    Don’t fill this out if you’re human: <input name="bot-field" />
+                  </label>
+                </p>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     お名前 *
