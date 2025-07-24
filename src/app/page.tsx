@@ -12,7 +12,7 @@ export default function Home() {
       >
         <div className="text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Chuluut LLC
+            Chuluut 合同会社
           </h1>
           <p className="text-xl md:text-2xl mb-8">
           モンゴルの雄大な自然と遊牧文化の体験、東京エリアの造園サービスもご提供中
@@ -25,7 +25,7 @@ export default function Home() {
               お問い合わせ
             </Link>
             <Link
-              href="/services#tokyo-landscaping"
+              href="/造園サービス"
               className="w-full sm:w-auto inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition-colors text-center"
             >
               造園サービスを見る
@@ -93,7 +93,7 @@ export default function Home() {
                   東京エリアで個人邸、マンション、公共空間の造園工事、植木の手入れ、庭園デザインを行っています。
                 </p>
                 <Link
-                  href="/services#tokyo-landscaping"
+                  href="/造園サービス"
                   className="text-green-600 hover:text-green-700 font-medium"
                 >
                   詳細を見る →
@@ -228,7 +228,7 @@ export default function Home() {
                 モンゴルには現代社会では失われつつある貴重な体験が待っています。
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                私たちChuluut LLCは、この素晴らしい文化と自然を日本の皆様に
+                私たちChuluut 合同会社は、この素晴らしい文化と自然を日本の皆様に
                 安全で快適にお楽しみいただけるよう、2年以上にわたり
                 専門的なサービスを提供し続けています。
               </p>

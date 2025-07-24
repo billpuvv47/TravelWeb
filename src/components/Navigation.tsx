@@ -11,7 +11,7 @@ const Navigation = () => {
 
   const navItems = [
     { href: "/", label: "ホーム" },
-    { href: "/services", label: "サービス" },
+    { href: "/造園サービス", label: "造園サービス" },
     { href: "/tours", label: "モンゴルツアー" },
     { href: "/gallery", label: "ギャラリー" },
     { href: "/company", label: "会社案内" },
@@ -25,7 +25,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <div className="text-2xl font-bold text-green-800">
-              Chuluut LLC
+              Chuluut 合同会社
             </div>
           </Link>
 

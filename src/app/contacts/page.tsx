@@ -146,8 +146,8 @@ export default function Contact() {
                     </svg>
                     <div>
                       <h3 className="font-medium text-gray-900">メールアドレス</h3>
-                      <a href="mailto:billpuvv47@gmail.com" className="text-green-600 hover:text-green-700">
-                        billpuvv47@gmail.com
+                      <a href="mailto:sh.adyasvren@gmail.com" className="text-green-600 hover:text-green-700">
+                        sh.adyasvren@gmail.com
                       </a>
                     </div>
                   </div>
@@ -158,8 +158,8 @@ export default function Contact() {
                     </svg>
                     <div>
                       <h3 className="font-medium text-gray-900">電話番号</h3>
-                      <a href="tel:07020125328" className="text-green-600 hover:text-green-700">
-                        070-2012-5328
+                      <a href="tel:0423061844" className="text-green-600 hover:text-green-700">
+                        04-2306-1844
                       </a>
                     </div>
                   </div>
@@ -170,11 +170,10 @@ export default function Contact() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                     <div>
-                      <h3 className="font-medium text-gray-900">サービスエリア</h3>
-                      <p className="text-gray-600">
-                        モンゴル全域（ツアー）<br />
-                        東京都・神奈川県・埼玉県（造園）
-                      </p>
+                      <h3 className="font-medium text-gray-900">会社の住所</h3>
+                      <a href="https://maps.app.goo.gl/ZuE85RnT67ps4EJg6" className="text-green-600 hover:text-green-700">
+                        〒189-0026 東京都東村山市多摩湖4-2-5 高野ハイツ201
+                      </a>
                     </div>
                   </div>
                 </div>

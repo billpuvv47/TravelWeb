@@ -5,7 +5,10 @@ export default function Company() {
       <section
         className="relative h-96 flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://scontent-itm1-1.xx.fbcdn.net/v/t1.6435-9/152336880_526361001677043_7800924190243634171_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=536f4a&_nc_ohc=WIHkDJC3SHIQ7kNvwHAyqFn&_nc_oc=AdnT9vRH2Btq__aWqQ0x_ep_1-sDy4BrJSUw-5wJYk5vjzGuGqfKUmnabpUYpAg3dS0&_nc_zt=23&_nc_ht=scontent-itm1-1.xx&_nc_gid=z-yTpceytHKSv2Sd7GZNyQ&oh=00_AfNZgSOMiQsQ48SGQx6tb4PYl_royc_HpAKPbYp4XdQJjA&oe=6876050C')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/logo.jpg')`,
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
         }}
       >
         <div className="text-center text-white max-w-4xl mx-auto px-4">
@@ -13,7 +16,7 @@ export default function Company() {
             会社案内
           </h1>
           <p className="text-xl">
-            Chuluut LLCについて
+            Chuluut 合同会社について
           </p>
         </div>
       </section>
@@ -27,7 +30,7 @@ export default function Company() {
                 私たちについて
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Chuluut LLCは、モンゴルの壮大な自然と遊牧民文化を日本の皆様にお届けする専門旅行会社です。
+                Chuluut 合同会社は、モンゴルの壮大な自然と遊牧民文化を日本の皆様にお届けする専門旅行会社です。
                 また、東京エリアにおいて高品質な造園サービスも提供しております。
               </p>
               <p className="text-lg text-gray-600 mb-6">
@@ -42,7 +45,10 @@ export default function Company() {
             <div
               className="h-96 bg-cover bg-center rounded-lg shadow-lg"
               style={{
-                backgroundImage: `url('https://scontent-itm1-1.xx.fbcdn.net/v/t1.6435-9/152336880_526361001677043_7800924190243634171_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=536f4a&_nc_ohc=WIHkDJC3SHIQ7kNvwHAyqFn&_nc_oc=AdnT9vRH2Btq__aWqQ0x_ep_1-sDy4BrJSUw-5wJYk5vjzGuGqfKUmnabpUYpAg3dS0&_nc_zt=23&_nc_ht=scontent-itm1-1.xx&_nc_gid=z-yTpceytHKSv2Sd7GZNyQ&oh=00_AfNZgSOMiQsQ48SGQx6tb4PYl_royc_HpAKPbYp4XdQJjA&oe=6876050C')`
+                backgroundImage: `url('/imgs/logo.jpg')`,
+                backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
               }}
             />
           </div>
@@ -70,7 +76,7 @@ export default function Company() {
                       会社名
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-500">
-                      株式会社 Chuluut LLC
+                      株式会社 Chuluut 合同会社
                     </td>
                   </tr>
                   <tr>
@@ -113,7 +119,7 @@ export default function Company() {
                       本社所在地
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-500">
-                      〒150-0001 東京都渋谷区神宮前1-1-1<br />
+                      〒189-0026 東京都東村山市多摩湖4-2-5 高野ハイツ201<br />
                       Adyaビル 3F
                     </td>
                   </tr>
@@ -206,7 +212,7 @@ export default function Company() {
                       2009年4月
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-500">
-                      東京都渋谷区にてChuluut LLC設立。モンゴル専門旅行業を開始。
+                      東京都渋谷区にてChuluut 合同会社設立。モンゴル専門旅行業を開始。
                     </td>
                   </tr>
                   <tr>

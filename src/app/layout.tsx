@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chuluut LLC - モンゴル旅行・東京造園サービス",
-  description: "モンゴル旅行ツアーと東京エリアの造園サービスを提供するChuluut LLCです。日本のお客様にモンゴルの美しい自然と遊牧民文化をお届けします。",
+  title: "Chuluut 合同会社 - モンゴル旅行・東京造園サービス",
+  description: "モンゴル旅行ツアーと東京エリアの造園サービスを提供するChuluut 合同会社です。日本のお客様にモンゴルの美しい自然と遊牧民文化をお届けします。",
 };
 
 export default function RootLayout({
