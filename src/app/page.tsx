@@ -25,7 +25,7 @@ export default function Home() {
               お問い合わせ
             </Link>
             <Link
-              href="/造園サービス"
+              href="/services#tokyo-landscaping"
               className="w-full sm:w-auto inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition-colors text-center"
             >
               造園サービスを見る
@@ -93,7 +93,7 @@ export default function Home() {
                   東京エリアで個人邸、マンション、公共空間の造園工事、植木の手入れ、庭園デザインを行っています。
                 </p>
                 <Link
-                  href="/造園サービス"
+                  href="/services#tokyo-landscaping"
                   className="text-green-600 hover:text-green-700 font-medium"
                 >
                   詳細を見る →

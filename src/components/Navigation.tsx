@@ -11,7 +11,7 @@ const Navigation = () => {
 
   const navItems = [
     { href: "/", label: "ホーム" },
-    { href: "/造園サービス", label: "造園サービス" },
+    { href: "/services", label: "サービス" },
     { href: "/tours", label: "モンゴルツアー" },
     { href: "/gallery", label: "ギャラリー" },
     { href: "/company", label: "会社案内" },

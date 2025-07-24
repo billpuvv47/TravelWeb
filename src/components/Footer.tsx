@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* 造園サービス */}
+          {/* Services */}
           <div className="text-center md:text-left">
             <h3 className="text-lg font-bold mb-4">サービス</h3>
             <div className="space-y-2 text-sm text-gray-300">
