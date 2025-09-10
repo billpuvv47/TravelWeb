@@ -12,10 +12,15 @@ export default function ContactForm() {
 		const formData = new FormData(form)
 
 		try {
+			const params = new URLSearchParams()
+			formData.forEach((value, key) => {
+				params.append(key, typeof value === 'string' ? value : value.name)
+			})
+
 			await fetch('/netlify-form-shadow.html', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-				body: new URLSearchParams(formData as any).toString(),
+				body: params.toString(),
 			})
 			router.push('/form-thanks.html')
 		} catch (error) {
