@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせありがとうございます！</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Noto Sans JP', 'Hiragino Sans', 'Meiryo', sans-serif;
+    }
+    .container {
+      background: #fff;
+      padding: 2.5rem 2rem 2rem 2rem;
+      border-radius: 1.25rem;
+      box-shadow: 0 4px 24px rgba(16, 185, 129, 0.10), 0 1.5px 6px rgba(0,0,0,0.04);
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+      border: 1.5px solid #bbf7d0;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 1.2rem;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(16,185,129,0.10);
+      background: #f0fdf4;
+      border: 2px solid #bbf7d0;
+      display: inline-block;
+    }
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #16a34a;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.02em;
+    }
+    .message {
+      font-size: 1.15rem;
+      color: #374151;
+      margin-bottom: 2.2rem;
+      line-height: 1.7;
+    }
+    .home-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #16a34a;
+      font-weight: 500;
+      font-size: 1rem;
+      text-decoration: none;
+      border-bottom: 1.5px solid #16a34a;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .home-link:hover {
+      color: #15803d;
+      border-bottom: 1.5px solid #15803d;
+      text-decoration: none;
+    }
+    @media (max-width: 500px) {
+      .container {
+        padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+      }
+      .title {
+        font-size: 1.3rem;
+      }
+      .message {
+        font-size: 1rem;
+      }
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/imgs/logo.jpg" alt="Adya Travel ロゴ" class="logo" />
+    <h1 class="title">お問い合わせありがとうございます！</h1>
+    <p class="message">内容を受け付けました。<br>24時間以内にご連絡いたします。</p>
+    <a href="/" class="home-link">ホームに戻る</a>
+  </div>
+</body>
+</html> 
