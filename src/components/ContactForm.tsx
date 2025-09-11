@@ -56,22 +56,13 @@ export default function ContactForm() {
 			message || '(メッセージなし / Мессеж байхгүй)',
 		]
 
-		const companyLines = [
-			'—',
-			'【会社情報 / Компанийн мэдээлэл】',
-			'Chuluut 合同会社',
-			'電話: 04-2306-1844',
-			'住所: 〒189-0026 東京都東村山市多摩湖4-2-5 高野ハイツ201',
-			'メール: sh.adyasvren@gmail.com',
-		]
-
 		const footerLines = [
 			'—',
 			'何卒よろしくお願いいたします。',
 			'Хүндэтгэсэн.',
 		]
 
-		const emailBody = [...headerLines, ...detailLines, ...companyLines, ...footerLines].join('\n')
+		const emailBody = [...headerLines, ...detailLines, ...footerLines].join('\n')
 
 		const overviewLines = [
 			'【送信概要 / Хүсэлтийн тойм】',
@@ -79,12 +70,6 @@ export default function ContactForm() {
 			`メール / И-мэйл: ${email}`,
 			`電話 / Утас: ${phone}`,
 			`サービス / Үйлчилгээ: ${serviceJP_MN}`,
-			'—',
-			'【会社情報 / Компанийн мэдээлэл】',
-			'Chuluut 合同会社',
-			'電話: 04-2306-1844',
-			'住所: 〒189-0026 東京都東村山市多摩湖4-2-5 高野ハイツ201',
-			'メール: sh.adyasvren@gmail.com',
 		]
 		const submissionOverview = overviewLines.join('\n')
 
@@ -136,10 +121,6 @@ export default function ContactForm() {
 			<input type="hidden" name="service_label" value="" />
 			<input type="hidden" name="submission_overview" value="" />
 			<input type="hidden" name="email_body" value="" />
-			<input type="hidden" name="company_name" value="Chuluut 合同会社" />
-			<input type="hidden" name="company_phone" value="04-2306-1844" />
-			<input type="hidden" name="company_email" value="sh.adyasvren@gmail.com" />
-			<input type="hidden" name="company_address" value="〒189-0026 東京都東村山市多摩湖4-2-5 高野ハイツ201" />
 
 			{errorMessage && (
 				<div className="rounded-md border border-red-200 bg-red-50 p-4 text-sm text-red-700">
