@@ -27,11 +27,46 @@ export default function ContactForm() {
 		const message = (form.querySelector('#message') as HTMLTextAreaElement | null)?.value ?? ''
 
 		const subject = serviceText
-			? `お問い合わせ (${serviceText}) - Chuluut 合同会社`
-			: 'お問い合わせ - Chuluut 合同会社'
+			? `新規依頼: ${serviceText} / New Request / Шинэ хүсэлт - Chuluut 合同会社`
+			: '新規依頼: お問い合わせ / New Request / Шинэ хүсэлт - Chuluut 合同会社'
+
+		const headerLines = [
+			'【ご依頼を受信しました】できるだけ早くお客様へご返信ください。',
+			'[You have received a work request] Please respond to the customer shortly.',
+			'[Та шинэ хүсэлт хүлээн авлаа] Үйлчлүүлэгчид аль болох хурдан хариулаарай.',
+		]
+
+		const detailLines = [
+			'—',
+			`提出者 / Requester / Захиалагч: ${name}`,
+			`メール / Email / И-мэйл: ${email}`,
+			`電話 / Phone / Утас: ${phone}`,
+			`サービス / Service / Үйлчилгээ: ${serviceText || serviceValue}`,
+			'—',
+			'メッセージ / Message / Зурвас:',
+			message || '(no message)',
+		]
+
+		const companyLines = [
+			'—',
+			'【会社情報 / Company / Компанийн мэдээлэл】',
+			'Chuluut 合同会社',
+			'電話: 04-2306-1844',
+			'住所: 〒189-0026 東京都東村山市多摩湖4-2-5 高野ハイツ201',
+			'メール: sh.adyasvren@gmail.com',
+		]
+
+		const footerLines = [
+			'—',
+			'何卒よろしくお願いいたします。',
+			'Kind regards,',
+			'Хүндэтгэсэн.',
+		]
+
+		const emailBody = [...headerLines, ...detailLines, ...companyLines, ...footerLines].join('\n')
 
 		const overviewLines = [
-			'【送信概要 / Submission Overview / Илгээлийн тойм】',
+			'【送信概要 / Submission Overview / Хүсэлтийн тойм】',
 			`お名前 / Name / Нэр: ${name}`,
 			`メール / Email / И-мэйл: ${email}`,
 			`電話 / Phone / Утас: ${phone}`,
@@ -49,6 +84,7 @@ export default function ContactForm() {
 		formData.set('subject', subject)
 		if (serviceText) formData.set('service_label', serviceText)
 		formData.set('submission_overview', submissionOverview)
+		formData.set('email_body', emailBody)
 
 		try {
 			const params = new URLSearchParams()
@@ -91,6 +127,7 @@ export default function ContactForm() {
 			<input type="hidden" name="subject" value="お問い合わせ: Chuluut 合同会社 Web フォーム" />
 			<input type="hidden" name="service_label" value="" />
 			<input type="hidden" name="submission_overview" value="" />
+			<input type="hidden" name="email_body" value="" />
 			<input type="hidden" name="company_name" value="Chuluut 合同会社" />
 			<input type="hidden" name="company_phone" value="04-2306-1844" />
 			<input type="hidden" name="company_email" value="sh.adyasvren@gmail.com" />
