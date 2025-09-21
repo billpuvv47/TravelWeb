@@ -40,43 +40,32 @@ export default function ContactForm() {
 			? `新規依頼: ${serviceJP} / ${serviceMN} - Chuluut 合同会社`
 			: `新規依頼: お問い合わせ - Chuluut 合同会社`
 
-		const headerLines = [
-			'【ご依頼を受信しました】できるだけ早くお客様へご返信ください。',
-			'[Та шинэ хүсэлт хүлээн авлаа] Үйлчлүүлэгчид аль болох хурдан хариулаарай.',
-		]
-
-		const detailLines = [
-			'—',
-			`提出者 / Захиалагч: ${name}`,
-			`メール / И-мэйл: ${email}`,
-			`電話 / Утас: ${phone}`,
-			`サービス / Үйлчилгээ: ${serviceJP_MN}`,
-			'—',
-			'メッセージ / Зурвас:',
-			message || '(メッセージなし / Мессеж байхгүй)',
-		]
-
-		const footerLines = [
-			'—',
-			'何卒よろしくお願いいたします。',
-			'Хүндэтгэсэн.',
-		]
-
-		const emailBody = [...headerLines, ...detailLines, ...footerLines].join('\n')
-
-		const overviewLines = [
-			'【送信概要 / Хүсэлтийн тойм】',
+		const emailBody = [
+			'【新規お問い合わせ】',
+			'[Шинэ хүсэлт]',
+			'',
+			'━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+			'',
+			'【お客様情報 / Үйлчлүүлэгчийн мэдээлэл】',
 			`お名前 / Нэр: ${name}`,
 			`メール / И-мэйл: ${email}`,
-			`電話 / Утас: ${phone}`,
+			phone ? `電話 / Утас: ${phone}` : '',
 			`サービス / Үйлчилгээ: ${serviceJP_MN}`,
-		]
-		const submissionOverview = overviewLines.join('\n')
+			'',
+			'【メッセージ / Зурвас】',
+			message || '(メッセージなし / Мессеж байхгүй)',
+			'',
+			'━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+			'',
+			'できるだけ早くお客様へご返信ください。',
+			'Үйлчлүүлэгчид аль болох хурдан хариулаарай.',
+			'',
+			'何卒よろしくお願いいたします。',
+			'Хүндэтгэсэн.'
+		].filter(line => line !== '').join('\n')
 
-		// Ensure fields exist for Netlify email
+		// Set only the essential fields for Netlify email
 		formData.set('subject', subject)
-		formData.set('service_label', serviceJP_MN)
-		formData.set('submission_overview', submissionOverview)
 		formData.set('email_body', emailBody)
 
 		try {
@@ -117,10 +106,6 @@ export default function ContactForm() {
 			onSubmit={handleSubmit}
 		>
 			<input type="hidden" name="form-name" value="contacts" />
-			<input type="hidden" name="subject" value="お問い合わせ: Chuluut 合同会社 Web フォーム" />
-			<input type="hidden" name="service_label" value="" />
-			<input type="hidden" name="submission_overview" value="" />
-			<input type="hidden" name="email_body" value="" />
 
 			{errorMessage && (
 				<div className="rounded-md border border-red-200 bg-red-50 p-4 text-sm text-red-700">
