@@ -1,23 +1,15 @@
 <!-- This file is used by Netlify to detect your contacts form fields at build time. -->
 <form name="contacts" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name" />
-  <input type="email" name="email" />
-  <input type="tel" name="phone" />
-  <select name="service">
-    <option value="gobi-tour">ゴビ砂漠探険ツアー</option>
-    <option value="nomad-tour">遊牧民体験ツアー</option>
-    <option value="horse-tour">乗馬体験ツアー</option>
-    <option value="culture-tour">文化体験ツアー</option>
-    <option value="garden-design">庭園設計・施工</option>
-    <option value="landscaping">造園工事</option>
-    <option value="maintenance">植木の手入れ</option>
-    <option value="other">その他</option>
-  </select>
-  <textarea name="message"></textarea>
+  <!-- Hide individual fields from email notifications by making them hidden -->
+  <input type="hidden" name="name" />
+  <input type="hidden" name="email" />
+  <input type="hidden" name="phone" />
+  <input type="hidden" name="service" />
+  <input type="hidden" name="message" />
   <input type="hidden" name="form-name" value="contacts" />
   <input name="bot-field" />
 
-  <!-- Additional fields to ensure Netlify includes them in notifications -->
+  <!-- Only these fields will appear in email notifications -->
   <input type="hidden" name="subject" value="" />
   <input type="hidden" name="email_body" value="" />
 </form> 
